@@ -20,7 +20,9 @@ This example has one endpoint - `notes`.
 
 To POST a new note, the app uses url-encoded parameters `title` and `body`.
 
-For GET, PUT, and DELETE requests, the note's id is simply passed to the URI.
+For GET, DELETE requests, the note's id is simply passed to the URI.
+
+For PUT requests, the id is passed to the uri and url-encoded body parameters `title` and `body` are also provided.
 
 ## Resources
 - When running on Ubuntu, nodemon error seems commmon because of limits on how many files can be watched. This solution worked for me: https://stackoverflow.com/questions/34662574/node-js-getting-error-nodemon-internal-watch-failed-watch-enospc
